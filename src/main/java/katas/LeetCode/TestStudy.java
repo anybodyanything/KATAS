@@ -62,8 +62,6 @@ public class TestStudy {
             }
         }
 
-        System.out.println("result: " + result);
-        System.out.println(Arrays.toString(nums));
         return result;
     }
 }
