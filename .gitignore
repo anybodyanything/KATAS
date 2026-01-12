@@ -1,1 +1,5 @@
 src/main/java/main/katas/TestStudy.java
+.classpath
+.project
+.settings/
+target/
