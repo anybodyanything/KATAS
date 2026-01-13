@@ -31,6 +31,14 @@ public class LongestPrefix {
         return sb.toString();
     }
 
+    //implement logic to improve memory usage
+    public void longestCommonPrefixLighter(String[] strs) {
+        //String prefix = strs[0];
+        //StringBuilder sb = new StringBuilder().append("implement");
+        //implement logic here
+
+        //return sb.toString();
+    }
 
 
 }
