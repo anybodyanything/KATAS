@@ -15,29 +15,32 @@ public class LongestPrefix {
     Explanation: There is no common prefix among the input strings.
      */
 
-    public String longestCommonPrefix(String[] strs) {
-        String prefix = strs[0];
-        StringBuilder sb = new StringBuilder().append(prefix);
-        int index = 0;
-        for (String word : strs) {
-            if(index < 1){
-                index++;
+        public String longestCommonPrefix(String[] strs) {
+            String prefix = strs[0];
+            StringBuilder sb = new StringBuilder().append(prefix);
+            int index = 0;
+            for (String word : strs) {
+                if(index < 1){
+                    index++;
+                }
+                while (!word.startsWith(sb.toString())){
+                    sb.setLength(sb.length() - 1);
+                }
             }
-            while (!word.startsWith(sb.toString())){
-                sb.setLength(sb.length() - 1);
-            }
+
+            return sb.toString();
         }
 
-        return sb.toString();
-    }
+    public String longestCommonPrefixLighter(String[] strs) {
+        String prefix = strs[0];
 
-    //implement logic to improve memory usage
-    public void longestCommonPrefixLighter(String[] strs) {
-        //String prefix = strs[0];
-        //StringBuilder sb = new StringBuilder().append("implement");
-        //implement logic here
-
-        //return sb.toString();
+        for (int i = 1; i < strs.length; i++) {
+            while (!strs[i].startsWith(prefix)) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+                if (prefix.isEmpty()) return "";
+            }
+        }
+        return prefix;
     }
 
 
