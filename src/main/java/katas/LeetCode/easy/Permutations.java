@@ -1,4 +1,4 @@
-package katas.LeetCode;
+package katas.LeetCode.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;
