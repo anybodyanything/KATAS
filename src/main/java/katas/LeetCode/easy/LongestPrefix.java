@@ -1,4 +1,4 @@
-package katas.LeetCode;
+package katas.LeetCode.easy;
 
 public class LongestPrefix {
     /*

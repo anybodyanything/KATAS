@@ -1,4 +1,4 @@
-package katas.Velv;
+package katas.interviews;
 
 import java.util.Stack;
 
