@@ -1,11 +1,13 @@
-import katas.LeetCode.easy.IsSubsequence;
+import katas.LeetCode.easy.ContainsDuplicate;
+
 
 public class Main {
     public static void main(String[] args) {
-        IsSubsequence isSubsequence = new IsSubsequence();
+        ContainsDuplicate containsDuplicate = new ContainsDuplicate();
 
-        System.out.println(isSubsequence.isSubsequence("abc", "ahbgdc"));
-        //System.out.println(isSubsequence.isSubsequence("axc", "ahbgdc"));
+        System.out.println(containsDuplicate.containsNearbyDuplicate(new int[]{-1, -1}, 1));
+        System.out.println(containsDuplicate.containsNearbyDuplicate(new int[]{1, 0, 1, 1}, 1));
+        System.out.println(containsDuplicate.containsNearbyDuplicate(new int[]{1, 2, 3, 1, 2, 3}, 2));
 
     }
 
